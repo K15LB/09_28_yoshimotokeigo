@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: 2019 年 6 月 20 日 08:52
--- サーバのバージョン： 5.7.25
+-- Generation Time: Jul 10, 2019 at 07:42 PM
+-- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `gs_bm_table`
+-- Table structure for table `gs_bm_table`
 --
 
 CREATE TABLE `gs_bm_table` (
@@ -35,7 +35,7 @@ CREATE TABLE `gs_bm_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- テーブルのデータのダンプ `gs_bm_table`
+-- Dumping data for table `gs_bm_table`
 --
 
 INSERT INTO `gs_bm_table` (`id`, `name`, `url`, `comment`, `indate`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `gs_bm_table` (`id`, `name`, `url`, `comment`, `indate`) VALUES
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `user_table`
+-- Table structure for table `user_table`
 --
 
 CREATE TABLE `user_table` (
@@ -59,12 +59,13 @@ CREATE TABLE `user_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- テーブルのデータのダンプ `user_table`
+-- Dumping data for table `user_table`
 --
 
 INSERT INTO `user_table` (`id`, `name`, `lid`, `lpw`, `kanri_flg`, `life_flg`) VALUES
 (1, 'Keigo', 'testid', 'testpw', 1, 0),
-(3, 'Yoshimoto', 'testtest', 'testtest', 0, 1);
+(3, 'Yoshimoto', 'testtest', 'testtest', 0, 1),
+(4, 'aaaa', 'aaaa', 'aaaa', 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -96,7 +97,7 @@ ALTER TABLE `gs_bm_table`
 -- AUTO_INCREMENT for table `user_table`
 --
 ALTER TABLE `user_table`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
